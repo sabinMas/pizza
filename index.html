@@ -7,15 +7,64 @@
     <link rel="icon" href="imgs/pizza_icon.png">
     <link rel="stylesheet" href="styles/pizza-styles.css">
 </head>
-<body>
+<body><main>
     <header>
+    <img src= "imgs/LOGO-DA-MICHELE.png" alt="Pizza Da Michele Logo">
     <h1> Welcome to Pizza Da Michele</h1>
     <h2> Serving the best pizza in Napoli since 1870</h2>
     <hr>
     <p> come check us out!!</p>
+    <a id="contact-button" href="#" role="button">Contact Us</a>
     </header>
-    <form>
+    <form id="pizza-form" action="#" method="get">
+        <!-- Contact Info -->
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+         <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+    <fieldset>
+        <legend>Select Pickup or Delivery</legend>
+        <label for="pickup">Pickup</label>
+        <input type="radio" id="pickup" name="method" value="pickup" >
+        <label for="delivery">Delivery</label>
+        <input type="radio" id="delivery" name="method" value="delivery">
+    </fieldset>
+
+    <fieldset>
+        <legend>Select Toppings</legend>
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" class="toppings" name="pepperoni">
+        <label for="mushrooms">Mushrooms</label>
+        <input type="checkbox" class="toppings" name="mushrooms">
+        <label for="olives">Olives</label>
+        <input type="checkbox" class="toppings" name="olives">
+        <label for="artichokes">Artichokes</label>
+        <input type="checkbox" class="toppings" name="artichokes">
+        <label for="onions">Onions</label>
+        <input type="checkbox" class="toppings" name="onions">
+        <label for="chicken">Chicken</label>
+        <input type="checkbox" class="toppings" name="chicken">
+        <label for="peppers">Jalapeno Peppers</label>
+        <input type="checkbox" class="toppings" name="peppers">
         
+    </fieldset>
+     <fieldset>
+        <legend>Pizza Size</legend>
+        <label for="small">Small</label>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="medium">Medium</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="large">Large</label>
+        <input type="radio" id="large" name="size" value="large">
+    </fieldset>
+    <!-- Submit Button -->
+     <button type="submit" id="order-button">Place Order</button>
     </form>
+    </main>
 </body>
 </html>
