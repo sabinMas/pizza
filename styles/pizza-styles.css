@@ -13,7 +13,7 @@ main {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    padding: 0 1rem 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
 }
 header{
     background-color: rgb(255, 238, 204);
@@ -59,4 +59,14 @@ legend{
  .toppings{
     display:inline-block;
     margin-right: 15px;
+ }
+ 
+ input[type="text"], textarea, select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(255, 145, 0);
+    border-radius: 4px;
+    resize: vertical;
+    background-color:rgb(255, 238, 204);
  }

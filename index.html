@@ -37,33 +37,40 @@
 
     <fieldset>
         <legend>Select Toppings</legend>
-        <label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
-        <label for="mushrooms">Mushrooms</label>
-        <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
-        <label for="olives">Olives</label>
-        <input type="checkbox" id="olives" name="toppings[]" value="olives">
-        <label for="artichokes">Artichokes</label>
-        <input type="checkbox" id="artichokes" name="toppings[]" value="artichokes">
-        <label for="onions">Onions</label>
-        <input type="checkbox" id="onions" name="toppings[]" value="onions">
-        <label for="chicken">Chicken</label>
-        <input type="checkbox" id="chicken" name="toppings[]" value="chicken">
-        <label for="peppers">Jalapeno Peppers</label>
-        <input type="checkbox" id="peppers" name="toppings[]" value="peppers">
+        <label for="pepperoni">Pepperoni
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni"></label>
+        <label for="mushrooms">Mushrooms
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms"></label>
+        <label for="olives">Olives
+        <input type="checkbox" id="olives" name="toppings[]" value="olives"></label>
+        <label for="artichokes">Artichokes
+        <input type="checkbox" id="artichokes" name="toppings[]" value="artichokes"></label>
+        <label for="onions">Onions
+        <input type="checkbox" id="onions" name="toppings[]" value="onions"></label>
+        <label for="chicken">Chicken
+        <input type="checkbox" id="chicken" name="toppings[]" value="chicken"></label>
+        <label for="peppers">Jalapeno Peppers
+        <input type="checkbox" id="peppers" name="toppings[]" value="peppers"></label>
         
     </fieldset>
 
      <fieldset>
         <legend>Pizza Size</legend>
-        <label for="small">Small</label>
-        <input type="radio" id="small" name="size" value="small">
-        <label for="medium">Medium</label>
-        <input type="radio" id="medium" name="size" value="medium">
-        <label for="large">Large</label>
-        <input type="radio" id="large" name="size" value=arge">
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+        </select>
     </fieldset>
-    
+    <!-- Comment Section -->
+     <label for="comment"> Comments/Instructions:</label>
+     <textarea id="comment" name="comment" placeholder="Any special requests?"></textarea>
+
+     <!-- Discount checkbox -->
+     <label for="discount">
+     <input type="checkbox" id="discount" name="discount">Check to sign up for discounts!</label>
+
     <!-- Submit Button -->
      <button type="submit" id="order-button">Place Order</button>
     </form>
