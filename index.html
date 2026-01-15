@@ -38,21 +38,22 @@
     <fieldset>
         <legend>Select Toppings</legend>
         <label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" class="toppings" name="pepperoni" value="pepperoni">
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
         <label for="mushrooms">Mushrooms</label>
-        <input type="checkbox" class="toppings" name="mushrooms" value="mushrooms">
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
         <label for="olives">Olives</label>
-        <input type="checkbox" class="toppings" name="olives" value="olives">
+        <input type="checkbox" id="olives" name="toppings[]" value="olives">
         <label for="artichokes">Artichokes</label>
-        <input type="checkbox" class="toppings" name="artichokes" value="artichokes">
+        <input type="checkbox" id="artichokes" name="toppings[]" value="artichokes">
         <label for="onions">Onions</label>
-        <input type="checkbox" class="toppings" name="onions" value="onions">
+        <input type="checkbox" id="onions" name="toppings[]" value="onions">
         <label for="chicken">Chicken</label>
-        <input type="checkbox" class="toppings" name="chicken" value="chicken">
+        <input type="checkbox" id="chicken" name="toppings[]" value="chicken">
         <label for="peppers">Jalapeno Peppers</label>
-        <input type="checkbox" class="toppings" name="peppers" value="peppers">
+        <input type="checkbox" id="peppers" name="toppings[]" value="peppers">
         
     </fieldset>
+
      <fieldset>
         <legend>Pizza Size</legend>
         <label for="small">Small</label>
@@ -62,6 +63,7 @@
         <label for="large">Large</label>
         <input type="radio" id="large" name="size" value=arge">
     </fieldset>
+    
     <!-- Submit Button -->
      <button type="submit" id="order-button">Place Order</button>
     </form>
